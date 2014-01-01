@@ -40,3 +40,15 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+alias tmux="tmux -2"
+
+
+# start weechat with a reasonable term
+function irc () {
+    if [[ $TMUX = '' ]]; then
+        weechat-curses
+    else
+        TERM=screen-256color weechat-curses
+    fi
+}

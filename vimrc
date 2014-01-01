@@ -5,7 +5,9 @@
 set nocompatible
 
 set bg=dark
-set ts=3
+set tabstop=4
+set shiftwidth=4
+set expandtab
 set nowrap
 set ruler
 set number
