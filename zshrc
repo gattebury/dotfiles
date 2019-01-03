@@ -10,8 +10,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="jtriley"
-#ZSH_THEME="blinks"
-ZSH_THEME="gattebury"
+ZSH_THEME="blinks"
+#ZSH_THEME="gattebury"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -59,10 +59,12 @@ plugins=(git)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+
+source ~/.profile
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
