@@ -108,3 +108,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
+
+export KUBECONFIG="$HOME/.kube/config"
+for file in "$HOME"/.kube/configs/*.yaml(N); do
+    KUBECONFIG="$KUBECONFIG:$file"
+done
+export KUBECONFIG
